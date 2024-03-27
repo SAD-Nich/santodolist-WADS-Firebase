@@ -2,8 +2,12 @@ body{
   background-color: black;
   color:white;
 }
-h1{
-  text-align: justify;
+.Name{
+  align-items: center;
+  text-align: center;
+}
+.profile-button{
+  display: inline-flex;
 }
 .wrapper{
   background:grey;

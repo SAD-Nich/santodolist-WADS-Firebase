@@ -1,0 +1,62 @@
+.profile-page-container {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .profile-content {
+    text-align: center;
+  }
+  
+  .profile-details, .overlay {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .profile-details{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .profile-pic {
+    display: inline;
+    width: 150px;
+    height: 150px;
+    color: yellow;
+  }
+  
+  .edit-profile-btn, .quit-btn, .todo-btn {
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: green;
+
+    cursor: pointer;
+  }
+  
+  .profile-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .profile-edit-form input, .profile-edit-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+
+  .label-black {
+    color: black;
+  }
+  
+  .label-white {
+    color: black;
+  }
+  

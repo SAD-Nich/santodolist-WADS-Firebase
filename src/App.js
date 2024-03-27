@@ -2,8 +2,10 @@ import React,{ useEffect, useState } from 'react';
 import './App.css';
 import {TiDelete} from 'react-icons/ti'
 import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+  const navigate = useNavigate();
   const [completedLayout, setCompleted] = useState(false);
   const [ToDos,setTodos] = useState([]);
   const [Title, setTitles] = useState("");
@@ -14,6 +16,9 @@ function App() {
     deletingToDos.splice(index);
     localStorage.setItem('completedTodos',JSON.stringify(deletingToDos));
     setCompletedTodos(deletingToDos);
+  }
+  const goToProfile = () =>{
+    navigate('/account');
   }
   const completedHandler = (index) =>{
     let time = new Date();
@@ -62,7 +67,8 @@ function App() {
   },[])
   return (
     <div className="App">
-      <h1>San's ToDoList</h1>
+      <h1 className="Name">San's ToDoList - Nicholaus Santo - 2602174415</h1>
+      <button onClick={goToProfile} className ="profile-button">Profile</button>
       <div className="wrapper">
         <div className="inputs">
           <div className="inputing-items">
